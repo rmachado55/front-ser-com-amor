@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import UsersService from 'Services/Users';
+import { useNavigate } from 'react-router-dom';
 
 function Copyright(props: any) {
   return (  
@@ -28,17 +30,28 @@ function Copyright(props: any) {
 
 const theme = createTheme();
 
-export default function Login() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+export default function Login (props : { setAuth : React.Dispatch<React.SetStateAction<boolean>> }) {
+  
+  const [email, setEmail] = useState('teste@teste')
+  const [password, setPassword] = useState('teste')
+  const navigate = useNavigate()
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      senha: data.get('senha'),
-    });
+    try {
+      const user = await UsersService.login({email: email, senha: password});
+      props.setAuth(true)
+      navigate( "/admin/dash" )
+    } catch (error) {
+      alert('Login ou Senha incorretos')      
+    }
+    
+   
   };
 
-  return (
+  return (<>
+  
+  
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -64,6 +77,8 @@ export default function Login() {
               id="email"
               label="E-mail cadastrado"
               name="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               autoComplete="email"
               autoFocus
             />
@@ -76,6 +91,8 @@ export default function Login() {
               type="password"
               id="password"
               autoComplete="current-password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -101,5 +118,6 @@ export default function Login() {
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
+        </>
   );
 }

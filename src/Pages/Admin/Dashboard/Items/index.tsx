@@ -8,9 +8,11 @@ import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+
 
 export const Items = (
-  <React.Fragment>
+  <React.Fragment>    
     <ListItemButton>
       <ListItemIcon>
         <DashboardIcon />
@@ -34,6 +36,12 @@ export const Items = (
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Blog" />
+    </ListItemButton>
+    <ListItemButton>
+      <ListItemIcon>
+      <LogoutRoundedIcon />
+      </ListItemIcon>
+      <ListItemText primary="Log-Out" />
     </ListItemButton>
   </React.Fragment>
 );
