@@ -1,27 +1,31 @@
 import { PrivateRoute } from 'Components/PrivateRoute'
-import Dashboard from './Pages/Admin/Dashboard'
-import Login from './Pages/Admin/Login'
-import {BrowserRouter, Route, Routes,} from 'react-router-dom'
+import Admin from './Pages/Admin'
+import Login from './Pages/Login'
+import { BrowserRouter, Route, Routes, } from 'react-router-dom'
 import { useState } from 'react'
+import { Diretoria } from 'Pages/Admin/Diretoria'
 
-export default function AppRouter() {
-  
-  const [auth, setAuth] = useState(false)
-  
-  return(
-  <BrowserRouter>
-    <Routes>
-    
-      <Route path="/admin/login" element={<Login setAuth={setAuth}/>} />
-      
-      <Route path="/admin/dash" element={
-        <PrivateRoute auth={auth}>
-          <Dashboard setAuth={setAuth}/>
-        </PrivateRoute>
-      } />
+export default function AppRouter ()
+{
 
-      
-    </Routes>
-  </BrowserRouter>
+  const [ auth, setAuth ] = useState( false )
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={ <Login setAuth={ setAuth } /> } />
+
+        <Route path="/admin" element={
+          <PrivateRoute auth={ auth }>
+            <Admin setAuth={ setAuth }/>
+          </PrivateRoute>
+        }>
+
+        
+        </Route>
+
+
+      </Routes>
+    </BrowserRouter>
   )
 }

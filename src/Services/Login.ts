@@ -1,6 +1,6 @@
 import Api from "Services/Api";
 
-const UsersService = {
+const LoginService = {
    
   login: async (params : any) => {
     const response = await Api.post('/logins/entrar', params);
@@ -14,4 +14,4 @@ const UsersService = {
   }
 }
 
-export default UsersService
+export default LoginService

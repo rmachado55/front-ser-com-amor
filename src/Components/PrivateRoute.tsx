@@ -10,5 +10,5 @@ function PrivateRoute(props : {
     if (localStorage.getItem('user') && props.auth ){        
       return props.children
     } else {
-      return <Navigate to="/admin/login" />}
+      return <Navigate to="/login" />}
     }
