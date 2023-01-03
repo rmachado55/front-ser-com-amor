@@ -15,15 +15,12 @@ export default function AppRouter ()
       <Routes>
         <Route path="/login" element={ <Login setAuth={ setAuth } /> } />
 
-        <Route path="/admin" element={
+        <Route path="/admin/" element={
           <PrivateRoute auth={ auth }>
-            <Admin setAuth={ setAuth }/>
+            <Admin />
           </PrivateRoute>
-        }>
-
+        }/>        
         
-        </Route>
-
 
       </Routes>
     </BrowserRouter>

@@ -45,7 +45,7 @@ export default function Login ( props: { setAuth: React.Dispatch<React.SetStateA
     {
       const user = await LoginService.login( { email: email, senha: password } );
       props.setAuth( true )
-      navigate( "/admin" )
+      navigate( "/admin/" )
     } catch ( error )
     {
       alert( 'Login ou Senha incorretos' )
