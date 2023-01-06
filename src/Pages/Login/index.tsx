@@ -113,9 +113,7 @@ export default function Login ( props: { setAuth: React.Dispatch<React.SetStateA
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Esqueceu sua senha?
-                </Link>
+                
               </Grid>
             </Grid>
           </Box>

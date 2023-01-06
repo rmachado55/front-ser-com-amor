@@ -5,9 +5,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {TabPanelProps} from 'Interfaces/TabPanelProps'
 import { ThemeProvider } from '@emotion/react';
-import {theme} from './Theme'
+import {themeAdmin} from '../../Themes/Admin'
 import Logo from 'Assets/img/Logo.png';
-import './Admin.css'
 import { Container } from '@mui/material';
 import { TabAdmin } from 'Components/TabAdmin';
 import { Diretoria } from './Diretoria';
@@ -51,10 +50,10 @@ export default function Admin() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={themeAdmin}>
 
       <Box sx={{
-        backgroundColor: theme.palette.primary.main,        
+        backgroundColor: themeAdmin.palette.primary.main,        
         
         height: '40px',
         mt:4,
@@ -90,7 +89,7 @@ export default function Admin() {
       </Box>      
       </Container>
       <Container>
-      <Container sx={{backgroundColor: theme.palette.background.default,borderRadius: '10px'}}>
+      <Container sx={{backgroundColor: themeAdmin.palette.background.default,borderRadius: '10px'}}>
         <TabPanel value={value} index={0}>
           <TabAdmin><Diretoria/></TabAdmin>
         </TabPanel>
@@ -98,7 +97,6 @@ export default function Admin() {
           <TabAdmin><Blog/></TabAdmin>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <TabAdmin><Balancos/></TabAdmin>
           <TabAdmin><Balancos/></TabAdmin>
         </TabPanel>
         <TabPanel value={value} index={3}>

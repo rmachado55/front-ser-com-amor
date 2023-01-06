@@ -3,7 +3,7 @@ import Admin from './Pages/Admin'
 import Login from './Pages/Login'
 import { BrowserRouter, Route, Routes, } from 'react-router-dom'
 import { useState } from 'react'
-import { Diretoria } from 'Pages/Admin/Diretoria'
+import Home from 'Pages/Home'
 
 export default function AppRouter ()
 {
@@ -13,6 +13,7 @@ export default function AppRouter ()
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' index element={<Home/>} />
         <Route path="/login" element={ <Login setAuth={ setAuth } /> } />
 
         <Route path="/admin/" element={

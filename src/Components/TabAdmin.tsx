@@ -1,6 +1,6 @@
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
-import { theme } from 'Pages/Admin/Theme';
+import { themeAdmin } from 'Themes/Admin';
 import { Children } from 'react';
 
 
