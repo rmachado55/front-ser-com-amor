@@ -9,9 +9,9 @@ export default function ListColumn (props : { dark : boolean, list : string[]}) 
   
   return(
   
-    <Box sx={{display : "grid", pr: 5}}>    
+    <Box sx={{display : "grid", pr: 3}}>    
     {props.list.map((item) => 
-    <Typography component={"h3"} color={ props.dark ? themeHome.palette.secondary.contrastText : themeHome.palette.primary.contrastText} sx={{py : 1, fontSize : 'large'}}>
+    <Typography component={"h3"} color={ props.dark ? themeHome.palette.secondary.contrastText : themeHome.palette.primary.contrastText} sx={{py : 1, fontSize : 'medium'}}>
       <FiberManualRecordIcon fontSize='inherit' color='primary' />
      {` ${item}`}
     </Typography>    

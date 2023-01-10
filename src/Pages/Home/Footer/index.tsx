@@ -4,12 +4,13 @@ import FooterLogo from 'Assets/img/FooterLogo.png'
 import { Typography } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
 import TitleColor from "Components/TitleColor";
+import ScorpDevNegativo from "Assets/img/LogoScorpDevNegativo.png"
 
 export default function Footer () {
 
-return(
+return(<>
   <Box sx={{display:"flex"}}>
-    <Box sx={{backgroundColor: themeHome.palette.primary.light, display : 'flex', width: {sm : '100%', md : '75%'}}}>
+    <Box sx={{backgroundColor: themeHome.palette.background.default, display : 'flex', width: {sm : '100%', md : '75%'}}}>
       <img src={FooterLogo} width="60%" />
       <Container>
         <Typography component="p">
@@ -42,6 +43,15 @@ return(
       </Container>
     </Box>
   </Box>
-  
+  <Box sx={{ backgroundColor : themeHome.palette.secondary.main, justifyContent : 'space-between', color : themeHome.palette.secondary.contrastText, display : 'flex', px : 3}}>
+    <Typography>2023</Typography>
+    
+    <Box>
+      <Typography>Produzido por:</Typography>
+      <img src={ScorpDevNegativo} height="30px"/>
+    
+    </Box>
+  </Box>
+  </>
   )
 }

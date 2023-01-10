@@ -13,7 +13,7 @@ import ListColumn from "Components/ListColumn";
 export default function Atendimentos () {
 
   return(<>
-    <Box sx={{width:'100%', backgroundColor : themeHome.palette.primary.light, pt: '10vh'}}>
+    <Box sx={{width:'100%', backgroundColor : themeHome.palette.background.default, pt: '10vh'}}>
       <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : '10vh'}}>
       
       {/* Atendimentos em Grupo */}
@@ -65,7 +65,7 @@ export default function Atendimentos () {
 
         </Box>
         <Box sx={{ pt : {xs : 4, md : 12 }}}>
-        <img src={AtendimentosIndividuais} width="100%"/>
+        <img src={AtendimentosIndividuais} width="90%"/>
         </Box>
         </Container >
       </Box>
