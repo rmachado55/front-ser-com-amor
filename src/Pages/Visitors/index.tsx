@@ -1,15 +1,19 @@
-import NavigationBar from "./Home/NavigationBar";
-import Footer from "./Home/Footer";
+import NavigationBar from "./NavigationBar";
+import Footer from "./Footer";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import WhatsApp from "./WhatsApp";
 
 
-export default function Visitors () {
+export default function Visitors ()
+{
 
-  return(<>
-  <NavigationBar/>
-  <Outlet/>
-  <Footer/>
+  return (
+  <>
+    <NavigationBar />
+    <Outlet />
+    <WhatsApp/>
+    <Footer />
   </>
-  
-    )
+
+  )
 }

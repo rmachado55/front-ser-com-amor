@@ -32,6 +32,5 @@ export const themeHome = createTheme({
       '"Segoe UI Symbol"',
       'Dancing Script'      
     ].join(','),
-  },
-  
+  },  
 });

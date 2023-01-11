@@ -15,7 +15,7 @@ import { ThemeProvider } from '@emotion/react';
 import { Facebook, Instagram } from '@mui/icons-material';
 
 
-const pages = ['Instituto', 'Atendimentos', 'NossoBlog', 'Contato', 'Transparência'];
+const pages = ['Instituto', 'Atendimentos', 'Nosso Blog', 'Contato', 'Transparência'];
 const settings = ['Instituto', 'Atendimentos', 'NossoBlog', 'Contato', 'Transparência'];
 
 function NavigationBar() {
@@ -70,12 +70,12 @@ function NavigationBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' } 
               }}
             > 
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography sx={{px: 4, py: 2, fontSize : 'large' }}>{page.toUpperCase()}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -94,7 +94,7 @@ function NavigationBar() {
           </Box>
           
         
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'space-between', mx:9}}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'space-between', mx:8}}>
         
         <Typography><img height="80px" src={Logo} /></Typography>
         <Box sx={{ display:'flex'}}>
@@ -102,15 +102,15 @@ function NavigationBar() {
             <Button
             key={page}
             onClick={handleCloseNavMenu}
-            sx={{ my: 1, pl: 4, pr: 4, color: 'black', display: 'block' }}
+            sx={{ my: 1, px:3, color: 'black', display: 'block' }}
             >
               {page}
             </Button>
           ))}
         </Box>
-        <Box sx={{display: "inline-flex", pt: 3}}>          
+        <Box sx={{display: 'flex', pt: 3}}>          
             <Typography>
-              <Instagram sx={{ pr: 4}} fontSize='large' color='primary'/>
+              <Instagram sx={{ pr: 2}} fontSize='large' color='primary'/>
               <Facebook fontSize='large' color='primary'/>
             </Typography>
           </Box>  
@@ -143,6 +143,7 @@ function NavigationBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    <Box sx={{height: { xs : '80px', md:  '100px'}}}/>
     </ThemeProvider>
   );
 }
