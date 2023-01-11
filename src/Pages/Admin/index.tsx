@@ -10,7 +10,7 @@ import Logo from 'Assets/img/Logo.png';
 import { Container } from '@mui/material';
 import { TabAdmin } from 'Components/TabAdmin';
 import { Diretoria } from './Diretoria';
-import { Blog } from './Blog';
+import Blog from './Blog'
 import { Balancos } from './Balancos';
 
 function TabPanel(props: TabPanelProps) {

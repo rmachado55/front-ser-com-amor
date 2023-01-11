@@ -11,14 +11,14 @@ import Footer from "./Footer";
 
 export default function Home () {
   return(
-    <ThemeProvider theme={themeHome}>
-      <NavigationBar />        
+    <>    
       <BannerHome/>
       <Instituto/>
       <Atendimentos/>
       <Galeria/>
-      <Parceiros/>
-      <Footer/>              
-    </ThemeProvider>
+      <Parceiros/>    
+    </>
+           
+
     )
 }

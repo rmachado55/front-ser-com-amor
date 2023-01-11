@@ -1,8 +1,6 @@
 
 
+export default function Blog () {
 
-export function Blog () {
-
-  return(<>Blog</>)
-  
+  return(<>Blog!</>)
 }

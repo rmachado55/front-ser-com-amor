@@ -3,9 +3,13 @@ import Admin from './Pages/Admin'
 import Login from './Pages/Login'
 import { BrowserRouter, Route, Routes, } from 'react-router-dom'
 import { useState } from 'react'
-import Home from 'Pages/Home'
-import NavigationBar from 'Pages/Home/NavigationBar'
-import Footer from 'Pages/Home/Footer'
+import Home from 'Pages/Visitors/Home'
+import NavigationBar from 'Pages/Visitors/Home/NavigationBar'
+import Footer from 'Pages/Visitors/Home/Footer'
+import Visitors from 'Pages/Visitors'
+import { ThemeProvider } from '@emotion/react'
+import { themeHome } from 'Themes/Home'
+import { NossoBlog } from 'Pages/Visitors/NossoBlog'
 
 export default function AppRouter ()
 {
@@ -13,22 +17,26 @@ export default function AppRouter ()
   const [ auth, setAuth ] = useState( false )
 
   return (<>  
+<ThemeProvider theme={themeHome}>
 
-    <BrowserRouter>      
-    <NavigationBar/>
-    <Routes>
-        <Route path='/' index element={<Home/>} />      
-    </Routes>
-    <Footer/>
-      <Routes>
-        <Route path="/login" element={ <Login setAuth={ setAuth } /> } />
-          <Route path="/admin/" element={
-            <PrivateRoute auth={ auth }>
+
+    <BrowserRouter>          
+    <Routes> 
+        <Route path='/' element={<Visitors/>}>
+            <Route index element={<Home/>}/>
+            <Route path='blog' element={<NossoBlog/>}/>
+        </Route>
+        <Route path='login/' element={<Login setAuth={setAuth}/>}/>
+        <Route path='admin/' element={<PrivateRoute auth={ auth }>
               <Admin />
-            </PrivateRoute>
-          }/>  
-      </Routes>
+        </PrivateRoute>}/>
+        
+    
+    </Routes>
+
     </BrowserRouter>
+
+    </ThemeProvider>
     </>
   )
 }
