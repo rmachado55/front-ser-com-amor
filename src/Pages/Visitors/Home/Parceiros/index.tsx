@@ -12,7 +12,7 @@ export default function Parceiros () {
 
 
 return(
-  <Container sx={{textAlign : "center"}}>
+  <Container sx={{py : 12, textAlign : "center"}}>
     <TitleColor start={''} middle={''} end={'Parceiros'} dark={false}/>
     <Container sx={{display: "flex", flexWrap : "wrap"}}>
     {Marcas.map(marca =>

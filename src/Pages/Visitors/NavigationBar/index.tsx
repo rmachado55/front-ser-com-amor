@@ -41,7 +41,7 @@ function NavigationBar() {
     <ThemeProvider theme={themeHome}>
 
     <AppBar sx={{backgroundColor: 'white', position: 'fixed', top: 0, ml:0}}>
-      <Container maxWidth="xl"  sx={{ fontFamily: 'Helvetica Neue'}} >
+      <Container maxWidth="xl"  >
         <Toolbar disableGutters>        
 
           <Box sx={{ display: { xs: 'flex', md: 'none' }, ml: 2}}>

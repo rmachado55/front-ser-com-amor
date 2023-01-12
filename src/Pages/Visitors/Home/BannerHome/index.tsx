@@ -4,9 +4,9 @@ import Banner from 'Assets/img/Banner.jpg'
 export function BannerHome () {
 
 return(
-    <Box sx={{p:0, mt : 14}}>
-      
-        <img src={Banner} style={{width: '100vw'}}></img>
+    <Box sx={{mt : {xs : 0 , md : 0}}}>
+
+        <img src={Banner} style={{ width : '100%'}}></img>
       
     </Box>
   )}

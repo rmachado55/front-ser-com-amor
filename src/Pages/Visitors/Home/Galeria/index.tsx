@@ -22,7 +22,7 @@ export default function Galeria () {
   
 return(
   <Container>
-    <Box sx={{textAlign:'center'}}>
+    <Box sx={{py: 12, textAlign:'center'}}>
       <TitleColor start={''} middle={''} end={'Galeria'} dark={false}/>
       <Box>
       <div data-mc-src="3a35e876-f5c9-40db-8c1d-b6bdea7a695e#instagram"></div>

@@ -13,8 +13,8 @@ import ListColumn from "Components/ListColumn";
 export default function Atendimentos () {
 
   return(<>
-    <Box sx={{width:'100%', backgroundColor : themeHome.palette.background.default, pt: '10vh'}}>
-      <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : '10vh'}}>
+    <Box sx={{width:'100%', backgroundColor : themeHome.palette.background.default, pt: 10}}>
+      <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : 10}}>
       
       {/* Atendimentos em Grupo */}
         <Box sx={{ width: { xs : '80vw', md : '38vw'}, textAlign : 'justify', px : 5}}>
@@ -48,7 +48,7 @@ export default function Atendimentos () {
     </Box>
 
       {/* Atendimentos Individuais */}
-      <Box sx={{width:'100%', backgroundColor : themeHome.palette.secondary.main, pt: '10vh'}}>
+      <Box sx={{width:'100%', backgroundColor : themeHome.palette.secondary.main, py: 10}}>
         <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : '10vh'}}>
         <Box sx={{ width: { xs : '80vw', md : '38vw'}, textAlign : 'justify', px : 5}}>
         <TitleColor start={"Atendimentos"} middle={""} end={" Individuais"} dark={true}/>    

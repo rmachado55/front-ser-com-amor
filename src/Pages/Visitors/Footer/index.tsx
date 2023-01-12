@@ -11,22 +11,25 @@ export default function Footer () {
 
 return(<>
   <Box sx={{display: {xs : "grid", md: "flex"}}}>
-    <Box sx={{py : 3, backgroundColor: themeHome.palette.background.default, display : 'flex', width: {xs : '100%', md : '66%'}}}>
-      <Box sx={{ px : 1, pt:'10%', ml : {xs : 0, md : 7}, width: '30%', display: 'grid', verticalAlign : 'center'}}>
+    <Box sx={{py : 9, backgroundColor: themeHome.palette.background.default, display : 'flex', width: {xs : '100%', md : '66%'}}}>
+      <Box sx={{ px : 1, pt:3, ml : {xs : 0, md : 7}, width: '30%', display: 'grid', verticalAlign : 'center'}}>
         <img src={FooterLogo} width="100%"/>        
       </Box>
       <Container>
         <TitleColor start={""} middle={""} end={"Contato"} dark={false}/>
         <Typography component="p" fontSize={'medium'}>
           Atendimento com agendamento de Segunda a Sexta-Feira:
-          <br></br>
-          <br></br><WhatsApp fontSize="inherit"/>98279-5343          
-          <br></br>
+          </Typography>
+
+          <Typography component="p" fontSize='large'>
+          <br></br><WhatsApp fontSize="inherit"/>(19) 98279-5343          
           <br></br><PinDrop fontSize="inherit"/>Rua 9 de julho, 763 - Jd Planalto - Vinhedo/SP
-        </Typography>
+          </Typography>
+          
+        
       </Container>      
     </Box>
-    <Box sx={{py : 9, backgroundColor : themeHome.palette.primary.main, display : 'flex', width: {xs : '100%', md : '34%'}}}>    
+    <Box sx={{py : 9 , backgroundColor : themeHome.palette.primary.main, display : 'flex', width: {xs : '100%', md : '34%'}}}>    
       <Container>
       <TitleColor start={""} middle={""} end={"Faça sua Doação"} dark={false}/>
         <Box  sx={{display:'flex', pt:2}}>
