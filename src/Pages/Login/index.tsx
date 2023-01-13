@@ -14,20 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import LoginService from 'Services/Login';
 import { useNavigate } from 'react-router-dom';
-
-function Copyright ( props: any )
-{
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" { ...props }>
-      { 'Copyright © ' }
-      <Link color="inherit" href="https://www.sercomamor.com.br">
-        Instituto Ser com Amor
-      </Link>{ ' ' }
-      { new Date().getFullYear() }
-      { '.' }
-    </Typography>
-  );
-}
+import { themeHome } from 'Themes/Home';
 
 const theme = createTheme();
 
@@ -57,8 +44,8 @@ export default function Login ( props: { setAuth: React.Dispatch<React.SetStateA
   return ( <>
 
 
-    <ThemeProvider theme={ theme }>
-      <Container component="main" maxWidth="xs">
+    <ThemeProvider theme={ themeHome }>
+      <Container sx={{ my : 11}} component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={ {
@@ -99,14 +86,11 @@ export default function Login ( props: { setAuth: React.Dispatch<React.SetStateA
               value={ password }
               onChange={ ( event ) => setPassword( event.target.value ) }
             />
-            <FormControlLabel
-              control={ <Checkbox value="remember" color="primary" /> }
-              label="Remember me"
-            />
+       
             <Button
               type="submit"
               fullWidth
-              variant="contained"
+              variant="contained"              
               sx={ { mt: 3, mb: 2 } }
             >
               Entrar
@@ -117,8 +101,7 @@ export default function Login ( props: { setAuth: React.Dispatch<React.SetStateA
               </Grid>
             </Grid>
           </Box>
-        </Box>
-        <Copyright sx={ { mt: 8, mb: 4 } } />
+        </Box>      
       </Container>
     </ThemeProvider>
   </>

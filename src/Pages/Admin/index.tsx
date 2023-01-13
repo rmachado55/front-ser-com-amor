@@ -10,7 +10,7 @@ import Logo from 'Assets/img/Logo.png';
 import { Container } from '@mui/material';
 import { TabAdmin } from 'Components/TabAdmin';
 import { Diretoria } from './Diretoria';
-import Blog from './Blog'
+
 import { Balancos } from './Balancos';
 
 function TabPanel(props: TabPanelProps) {
@@ -94,12 +94,9 @@ export default function Admin() {
           <TabAdmin><Diretoria/></TabAdmin>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <TabAdmin><Blog/></TabAdmin>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
           <TabAdmin><Balancos/></TabAdmin>
         </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={2}>
           <TabAdmin><h1>...</h1></TabAdmin>
         </TabPanel>
       </Container>

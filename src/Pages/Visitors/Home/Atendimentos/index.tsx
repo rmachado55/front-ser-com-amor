@@ -8,12 +8,10 @@ import AtendimentosIndividuais from 'Assets/img/AtendimentosIndividuais.jpg'
 import ListColumn from "Components/ListColumn";
 
 
-
-
 export default function Atendimentos () {
 
   return(<>
-    <Box sx={{width:'100%', backgroundColor : themeHome.palette.background.default, pt: 10}}>
+    <Box id="atendimentos" sx={{width:'100%', backgroundColor : themeHome.palette.background.default, pt: 10}}>
       <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : 10}}>
       
       {/* Atendimentos em Grupo */}

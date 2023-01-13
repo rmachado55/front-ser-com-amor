@@ -12,8 +12,8 @@ export default function Instituto () {
 
 
   return(
-      <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }, pb : {xs : '20vh', md : '30vh'}}}>
-      <Box sx={{ width: { xs : '80vw', md : '38vw'}, textAlign : 'justify', px : 5}}>
+      <Container id="instituto" sx={{display : { xs : 'grid', md : 'flex'}}}>
+      <Box sx={{ width : { xs : '100%', md : '50%'}, py : {xs : 2, md: 8}}}>
       <TitleColor start={"Somos"} middle={" com"} end={" Amor"} dark={false}/>
       <Typography component="p" gutterBottom>
       Somos uma instituição sem fins lucrativos em prol de quem realmente precisa.        
@@ -29,7 +29,7 @@ export default function Instituto () {
       Nosso objetivo é dar acolhimento e apoio de forma humanizada, especializada e gratuita, em áreas multidisciplinares.
       </Typography> 
       </Box>
-      <Box sx={{ width: { xs : '84vw', md : '50vw'}, textAlign : 'justify', px : 5}}>
+      <Box sx={{ width: { xs : '100%', md : '50%'}, textAlign : 'justify', px : 5}}>
         <Typography>
           <img src={InstitutoImg} width="100%"/>   
         </Typography>

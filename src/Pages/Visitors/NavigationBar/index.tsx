@@ -13,10 +13,21 @@ import MenuItem from '@mui/material/MenuItem';
 import Logo from 'Assets/img/Logo.png'
 import { ThemeProvider } from '@emotion/react';
 import { Facebook, Instagram } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 
-const pages = ['Instituto', 'Atendimentos', 'Nosso Blog', 'Contato', 'Transparência'];
-const settings = ['Instituto', 'Atendimentos', 'NossoBlog', 'Contato', 'Transparência'];
+const pages = [
+  {exib : 'Instituto',
+  link: "/#instituto"},
+  {exib : 'Atendimentos',
+  link: "/#atendimentos"},
+  {exib : 'Contato',
+  link: "/#contato"},
+  {exib : 'Transparência',
+  link: "/transparencia"},  
+  {exib : 'Administrativo',
+  link: "/login"}
+]
 
 function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -38,13 +49,12 @@ function NavigationBar() {
   };
 
   return (
-    <ThemeProvider theme={themeHome}>
-
-    <AppBar sx={{backgroundColor: 'white', position: 'fixed', top: 0, ml:0}}>
-      <Container maxWidth="xl"  >
+    <ThemeProvider theme={themeHome}>    
+      <Container maxWidth="lg"  >
+      <AppBar sx={{backgroundColor: 'white', position: 'fixed', top: 0, width: '100%'}}>
         <Toolbar disableGutters>        
 
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, ml: 2}}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' }}}>
             <IconButton
               size="large"
               onClick={handleOpenNavMenu}
@@ -74,9 +84,9 @@ function NavigationBar() {
               }}
             > 
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{px: 4, py: 2, fontSize : 'large' }}>{page.toUpperCase()}</Typography>
-                </MenuItem>
+                <a href={page.link}><MenuItem key={page.exib} onClick={handleCloseNavMenu}>
+                  <Typography sx={{px: 4, py: 2, fontSize : 'large' }}>{page.exib.toUpperCase()}</Typography>
+                </MenuItem></a>
               ))}
             </Menu>
             <Typography
@@ -99,19 +109,19 @@ function NavigationBar() {
         <Typography><img height="80px" src={Logo} /></Typography>
         <Box sx={{ display:'flex'}}>
           {pages.map((page) => (
-            <Button
-            key={page}
+            <a href={page.link}><Button
+            key={page.exib}
             onClick={handleCloseNavMenu}
             sx={{ my: 1, px:3, color: 'black', display: 'block' }}
             >
-              {page}
-            </Button>
+              {page.exib}
+            </Button></a>
           ))}
         </Box>
         <Box sx={{display: 'flex', pt: 3}}>          
-            <Typography>
-              <Instagram sx={{ pr: 2}} fontSize='large' color='primary'/>
-              <Facebook fontSize='large' color='primary'/>
+            <Typography >
+              <a href="https://www.instagram.com/institutosercomamor/"><Instagram fontSize='large' sx={{ mr: 2}} color='primary'/></a>
+              <a href="https://www.facebook.com/institutosercomamor/"><Facebook fontSize='large' color='primary'/></a>             
             </Typography>
           </Box>  
       </Box>
@@ -133,16 +143,18 @@ function NavigationBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
+              {pages.map((page) => (
+                <a href={page.link}>
+                  <MenuItem key={page.exib} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{page.exib}</Typography>
+                </MenuItem></a>
               ))}
             </Menu>
           </Box>
         </Toolbar>
+        </AppBar>
       </Container>
-    </AppBar>
+
     <Box sx={{height: { xs : '80px', md:  '100px'}}}/>
     </ThemeProvider>
   );
