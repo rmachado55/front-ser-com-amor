@@ -24,9 +24,7 @@ const pages = [
   {exib : 'Contato',
   link: "/#contato"},
   {exib : 'Transparência',
-  link: "/transparencia"},  
-  {exib : 'Administrativo',
-  link: "/login"}
+  link: "/transparencia"}
 ]
 
 function NavigationBar() {

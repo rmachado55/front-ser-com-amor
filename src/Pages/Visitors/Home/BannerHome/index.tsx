@@ -5,12 +5,12 @@ import BannerVertical from 'Assets/img/BannerVertical.png'
 
 export function BannerHome () {
 
-return(<>
-    <Box sx={{display : {xs : 'none', md : 'flex'}}}>
+return(<Container>
+    <Box sx={{display : {xs : 'none', md : 'flex'}, mb : 10}}>
         <img src={BannerHorizontal} style={{ width: '90%', paddingLeft: '5%'}}></img>      
     </Box>
     <Box sx={{display : {xs : 'flex', md : 'none'}}}>
         <img src={BannerVertical} style={{ width: '90%', paddingLeft: '5%'}}></img>      
     </Box>
-    </>
+    </Container>
   )}

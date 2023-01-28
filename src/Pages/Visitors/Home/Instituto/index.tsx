@@ -1,6 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import InstitutoImg from 'Assets/img/Instituto.jpg'
+import InstitutoImg from 'Assets/img/Instituto.png'
 import TitleColor from "Components/TitleColor";
 
 
@@ -9,8 +9,8 @@ export default function Instituto () {
 
 
   return(
-      <Container id="instituto" sx={{display : { xs : 'grid', md : 'flex'}}}>
-      <Box sx={{ width : { xs : '100%', md : '50%'}, py : {xs : 2, md: 8}}}>
+      <Container id="instituto" sx={{pb : {xs :5, md: 10}, display : { xs : 'grid', md : 'flex'}}}>
+      <Box sx={{ width : { xs : '100%', md : '50vw'}, py : {xs : 2, md: 4}}}>
       <TitleColor start={"Somos"} middle={" com"} end={" Amor"} dark={false}/>
       <Typography component="p" gutterBottom>
       Somos uma instituição sem fins lucrativos em prol de quem realmente precisa.        
@@ -26,10 +26,9 @@ export default function Instituto () {
       Nosso objetivo é dar acolhimento e apoio de forma humanizada, especializada e gratuita, em áreas multidisciplinares.
       </Typography> 
       </Box>
-      <Box sx={{ width: { xs : '100%', md : '50%'}, textAlign : 'justify', px : 5}}>
-        <Typography>
-          <img src={InstitutoImg} width="100%"/>   
-        </Typography>
+      <Box sx={{ width: { xs : '100%', md : '50%'}, textAlign : 'justify', px : {xs : 0 , md :5}}}>
+          <img src={InstitutoImg} width="90%"/>   
+
       </Box>
         
       

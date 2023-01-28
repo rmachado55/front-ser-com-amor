@@ -2,7 +2,7 @@ import { BannerHome } from "./BannerHome";
 import Instituto from "./Instituto";
 import Atendimentos from "./Atendimentos";
 import Galeria from "./Galeria";
-import Parceiros from "./Parceiros";
+
 
 export default function Home ()
 {
@@ -12,7 +12,6 @@ export default function Home ()
       <Instituto />
       <Atendimentos />
       <Galeria />
-      <Parceiros />
     </>
 
 
