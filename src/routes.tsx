@@ -1,5 +1,4 @@
 import { PrivateRoute } from 'Components/PrivateRoute'
-import Admin from './Pages/Admin'
 import Login from './Pages/Login'
 import { BrowserRouter, Route, Routes, } from 'react-router-dom'
 import { useState } from 'react'
@@ -27,9 +26,7 @@ export default function AppRouter ()
             <Route path='transparencia/' element={ <Transparencia/>} />
           </Route>
           
-          <Route path='admin/' element={ <PrivateRoute auth={ auth }>
-            <Admin />
-          </PrivateRoute> } />
+         
 
 
         </Routes>

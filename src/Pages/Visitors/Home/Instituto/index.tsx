@@ -1,10 +1,7 @@
-import { InsertEmoticon } from "@mui/icons-material";
 import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import InstitutoImg from 'Assets/img/Instituto.png'
-
+import InstitutoImg from 'Assets/img/Instituto.jpg'
 import TitleColor from "Components/TitleColor";
-
 
 
 

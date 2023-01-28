@@ -13,22 +13,22 @@ return(<>
   <Box sx={{backgroundColor : themeHome.palette.background.default, py : 9}}>
   <Container >
     <Box sx={{ width : {xs : '100%', md :'50%'}}}>
-    <TitleColor start="Demonstrativo" middle="" end=" Financeiro" dark={false}/>
-    </Box>
-    <Box sx={{display : 'flex'}}>
-      {Financeiro.map(document => 
+    <TitleColor start="Documentos" middle=" da" end=" Instituição" dark={false}/>
+    </Box>    
+    <a href="/src/Assets/files/ESTATUTO.pdf">
+    <Box sx={{display : 'flex'}}>      
         <Paper sx={{m: 2, p :2, textAlign : 'center', width : {xs : '30%'}}}>          
            <Typography fontSize='large' component={'h2'}>
-           {document.title} 
+           Estatuto do Instituto Ser com Amor 
            </Typography>           
            <Typography fontSize='small' component={'p'}>
-           {document.date}
+           Última atualização - 2022
            </Typography>
            <PictureAsPdf fontSize={'large'}/>
 
-        </Paper>)}
-    
+        </Paper>    
     </Box>
+    </a>
     
 
   </Container>
@@ -37,26 +37,44 @@ return(<>
   <Box sx={{backgroundColor : themeHome.palette.secondary.main, py : 9}}>
   <Container >
     <Box sx={{ width : {xs : '100%', md :'50%'}}}>
-    <TitleColor start="Documentação" middle=" do" end=" Instituto" dark={true}/>
+    <TitleColor start="Documentos" middle="" end=" Contábeis" dark={true}/>
     </Box>
     <Box sx={{display : 'flex'}}>
-      {Adm.map(document => 
-        <Paper sx={{m: 2, p :2, textAlign : 'center', width : {xs : '30%'}}}>          
+      <Paper sx={{m: 2, p :2, textAlign : 'center', width : {xs : '30%'}}}>          
            <Typography fontSize='large' component={'h2'}>
-           {document.title} 
+            Demonstrativo Contábil
            </Typography>           
            <Typography fontSize='small' component={'p'}>
-           {document.date}
+            Ano 2022
+           </Typography>
+           <PictureAsPdf fontSize={'large'}/>
+        </Paper>    
+    </Box>
+  </Container>
+</Box>
+<Box sx={{backgroundColor : themeHome.palette.background.default, py : 9}}>
+  <Container >
+    <Box sx={{ width : {xs : '100%', md :'50%'}}}>
+    <TitleColor start="Parcerias " middle="" end=" Públicas" dark={false}/>
+    </Box>
+    <a href="/src/Assets/files/colaboracao2022.pdf">
+      <Box sx={{display : 'flex'}}>      
+        <Paper sx={{m: 2, p :2, textAlign : 'center', width : {xs : '30%'}}}>          
+           <Typography fontSize='large' component={'h2'}>
+           Termo de Colaboração
+           </Typography>           
+           <Typography fontSize='small' component={'p'}>
+           Ano 2022
            </Typography>
            <PictureAsPdf fontSize={'large'}/>
 
-        </Paper>)}
-    
-    </Box>
-    
-
+        </Paper>    
+      </Box>    
+    </a>
   </Container>
   </Box>
+
+
   </>
   )
 }

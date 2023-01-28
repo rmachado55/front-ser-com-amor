@@ -51,11 +51,11 @@ export default function Atendimentos () {
         <Box sx={{ width: { xs : '80vw', md : '38vw'}, textAlign : 'justify', px : 5}}>
         <TitleColor start={"Atendimentos"} middle={""} end={" Individuais"} dark={true}/>    
         <Typography sx={{ color : themeHome.palette.secondary.contrastText}}>
-          Nossos atendimentos são feitos de forma humanizada, por uma equipe de profissionais especializados, capacitados e voluntários.
+          Nossos atendimentos são feitos de forma humanizada, por uma equipe de profissionais contratados, especializados, capacitados e voluntários, apoiando os assistidos(as) nas áreas:
         </Typography>
         <Container sx={{display: {xs : 'grid', md : 'flex'}, pt : 4}}>
-          <ListColumn dark={true} list={["Assistência Fraterna", "Educação física", "Enfermagem", "Estética", "Fisioterapia", "Fonoaudiologia", "Fotografia", "Nutrição"]}/>
-          <ListColumn dark={true} list={["Microfisioterapia", "Odontologia", "Oncogenética", "Orientação Jurídica", "Psicologia", "Serviço Social", "Terapia Ocupacional", "Terapias integrativas"]}/>
+          <ListColumn dark={true} list={["Assistência Fraterna", "Educação física", "Enfermagem", "Estética", "Fisioterapia", "Fonoaudiologia", "Nutrição"]}/>
+          <ListColumn dark={true} list={["Odontologia", "Orientação Jurídica", "Psicologia", "Serviço Social", "Terapia Ocupacional", "Terapias integrativas"]}/>
           
         </Container>
         
