@@ -83,7 +83,7 @@ function NavigationBar() {
             > 
               {pages.map((page) => (
                 <a href={page.link}><MenuItem key={page.exib} onClick={handleCloseNavMenu}>
-                  <Typography sx={{px: 4, py: 2, fontSize : 'l' }}>{page.exib.toUpperCase()}</Typography>
+                  <Typography sx={{px: 4, py: 2, fontSize : 'large' }}>{page.exib.toUpperCase()}</Typography>
                 </MenuItem></a>
               ))}
             </Menu>
@@ -107,13 +107,14 @@ function NavigationBar() {
         <Typography><img height="80px" src={Logo} /></Typography>
         <Box sx={{ display:'flex'}}>
           {pages.map((page) => (
-            <a href={page.link}><Button
-            key={page.exib}
-            onClick={handleCloseNavMenu}
-            sx={{ my: 1, px:3, color: 'black', display: 'block' }}
-            >
-              {page.exib}
-            </Button></a>
+            <a href={page.link}>
+              <Button
+                key={page.exib}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 1, px:3, color: 'black', display: 'block', fontSize : 'large' }}>
+                  {page.exib}
+              </Button>
+            </a>
           ))}
         </Box>
         <Box sx={{display: 'flex', pt: 3}}>          
