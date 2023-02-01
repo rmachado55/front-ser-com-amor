@@ -1,12 +1,11 @@
 import { Box, Container } from "@mui/system";
 import { themeHome } from "Themes/Home";
-import FooterLogo from 'Assets/img/FooterLogo.png'
 import { Typography } from "@mui/material";
 import { Email, Facebook, Instagram, PinDrop, WhatsApp } from "@mui/icons-material";
 import TitleColor from "Components/TitleColor";
-import ScorpDevNegativo from "Assets/img/LogoScorpDevNegativo.png"
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import { Link } from "react-router-dom";
+import FooterLogo from 'Assets/img/FooterLogo.png'
+
 
 export default function Footer () {
 
@@ -62,9 +61,7 @@ return(<>
   </Box>
   <Box sx={{ backgroundColor : themeHome.palette.secondary.main, justifyContent : 'space-between', color : themeHome.palette.secondary.contrastText, display : 'flex', px : {xs : 3, md: 12}, py: 1, fontSize : {xs : '10px', md: '12px'}}}>
     <Typography fontSize={'inherit'} sx={{pr:4, py:{ xs: 0, md: 1}}} >2023 - Todos os direitos reservados - Instituto Ser com Amor</Typography>   
-    <Box>      
-      <img src={ScorpDevNegativo} height="30px"/>    
-    </Box>
+
   </Box>
   </>
   )

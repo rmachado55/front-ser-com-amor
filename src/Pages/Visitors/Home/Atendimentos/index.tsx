@@ -35,7 +35,7 @@ export default function Atendimentos () {
           <img src={AtendimentosComunitarios} width="100%"/>
         </Box>
       </Box>
-      <Box sx={{ width: { xs : '90%', md : '50vw'}, textAlign : 'justify', pl : 0, pb : {xs :12, md : 28}}}>
+      <Box sx={{ width: { xs : '90%', md : '50vw'}, textAlign : 'justify', pl : 0, pb : {xs : 5, md : 10}}}>
         
         <TitleColor start={"Atendimentos"} middle={""} end={" Comunitários"} dark={false}/>
         <Typography>
@@ -46,7 +46,7 @@ export default function Atendimentos () {
     </Box>
 
       {/* Atendimentos Individuais */}
-      <Box sx={{width:'100%', backgroundColor : themeHome.palette.secondary.main, py: 10}}>
+      <Box sx={{width:'100%', backgroundColor : themeHome.palette.secondary.main, py: {xs: 5, md: 10}}}>
         <Container sx={{display : { xs : 'grid', md : 'flex'}, mx: { xs : 0, md : 8 }}}>
         <Box sx={{ width: { xs : '90%', md : '50vw'}, textAlign : 'justify', px : {xs: 0, md: 5}}}>
         <TitleColor start={"Atendimentos"} middle={""} end={" Individuais"} dark={true}/>    

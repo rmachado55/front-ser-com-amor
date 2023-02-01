@@ -1,6 +1,6 @@
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import WhatsApp from "./WhatsApp";
 import { themeHome } from "Themes/Home";
 import { Box } from "@mui/system";
