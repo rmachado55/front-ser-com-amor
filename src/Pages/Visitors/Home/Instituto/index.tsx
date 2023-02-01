@@ -10,7 +10,7 @@ export default function Instituto () {
 
   return(
       <Container id="instituto" sx={{pb : {xs :5, md: 10}, display : { xs : 'grid', md : 'flex'}}}>
-      <Box sx={{ width : { xs : '100%', md : '50vw'}, py : {xs : 2, md: 4}}}>
+      <Box sx={{ width : { xs : '100%', md : '50%'}, py : {xs : 2, md: 4}}}>
       <TitleColor start={"Somos"} middle={" com"} end={" Amor"} dark={false}/>
       <Typography component="p" gutterBottom>
       Somos uma instituição sem fins lucrativos em prol de quem realmente precisa.        

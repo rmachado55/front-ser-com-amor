@@ -83,7 +83,7 @@ function NavigationBar() {
             > 
               {pages.map((page) => (
                 <a href={page.link}><MenuItem key={page.exib} onClick={handleCloseNavMenu}>
-                  <Typography sx={{px: 4, py: 2, fontSize : 'large' }}>{page.exib.toUpperCase()}</Typography>
+                  <Typography sx={{px: 4, py: 2, fontSize : 'l' }}>{page.exib.toUpperCase()}</Typography>
                 </MenuItem></a>
               ))}
             </Menu>
