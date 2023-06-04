@@ -22,19 +22,4 @@ export const themeHome = createTheme({
   typography:{
     fontFamily : ['"Questrial", sans-serif'].join(','),
   }
-  // typography: {
-  //   fontFamily: [
-  //     '-apple-system',
-  //     'BlinkMacSystemFont',
-  //     '"Segoe UI"',
-  //     'Roboto',
-  //     '"Helvetica Neue"',
-  //     'Arial',
-  //     'sans-serif',
-  //     '"Apple Color Emoji"',
-  //     '"Segoe UI Emoji"',
-  //     '"Segoe UI Symbol"',
-  //     'Dancing Script'      
-  //   ].join(','),
-  // },  
 });
