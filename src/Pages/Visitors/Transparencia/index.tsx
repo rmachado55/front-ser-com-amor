@@ -17,7 +17,7 @@ export default function Transparencia ()
       <Box sx={ { paddingY: '40px', borderBottom: ( dark ? '2px solid white' : '1px solid black' ) } }>
         <Typography variant="h5" sx={ { fontWeight: '900', color: ( dark ? 'white' : 'black' ) } }>{ subPasta }</Typography>
         { documentosFiltrados.map( documento =>
-          <a href={ `/public/files/${ documento.pasta }/${ documento.subPasta }/${ documento.caminho }.${ documento.tipo }` }>
+          <a href={ `arquivos/${ documento.caminho }.${ documento.tipo }` }>
             <Paper sx={ { marginTop: '20px', padding: '20px', display: 'flex', overflowWrap: 'anywhere', borderRadius: '20px' } }>
               <Box sx={ { display: 'flex' } }>
                 <Box sx={ { margin: '0 20px 0 0' } }>
