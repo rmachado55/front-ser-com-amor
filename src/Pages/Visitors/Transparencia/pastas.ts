@@ -16,13 +16,13 @@ subPastas : ["Ano 2022"]},
 start : "Parcerias",
 middle : " ",
 end : "Públicas",
-subPastas : ["Prefeitura de Vinhedo - 2023","Prefeitura de Vinhedo - 2022"]},
+subPastas : ["Prefeitura de Vinhedo - 2023","Prefeitura de Vinhedo - 2022"]}
 
-// ,{pasta : "Relatorios",
-// start : "Relatórios ",
-// middle : "anuais e ",
-// end : "planos de ação",
-// subPastas : ["Ano 2023", "Ano 2022"]}
+,{pasta : "Relatorios",
+start : "Relatórios ",
+middle : "anuais e ",
+end : "planos de ação",
+subPastas : ["Ano 2023"]}
 ]
 
 export default pastas
