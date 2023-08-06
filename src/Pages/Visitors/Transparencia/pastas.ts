@@ -20,7 +20,7 @@ subPastas : ["Prefeitura de Vinhedo - 2023","Prefeitura de Vinhedo - 2022"]}
 
 ,{pasta : "Relatorios",
 start : "Relatórios ",
-middle : "anuais e ",
+middle : "mensais e ",
 end : "planos de ação",
 subPastas : ["Ano 2023"]}
 ]
