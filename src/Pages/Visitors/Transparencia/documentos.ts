@@ -188,7 +188,37 @@ subPasta : "Ano 2023",
 ano : 2023,
 tipo : "pdf",
 caminho : "RELATORIO_SETEMBRO23"
-}
+},
+{ nomeDocumento : "Plano de Trabalho | Termo de Colaboração 23 2023",
+pasta : "Parcerias",
+start : "Parcerias",
+middle : " ",
+end : "Públicas",
+subPasta : "Prefeitura de Vinhedo - 2023",
+ano : 2023,
+tipo : "pdf",
+caminho : "Plano_de_Trabalho_Termo_de_Colaboração_23_2023"
+},
+{ nomeDocumento : "Termo de Colaboração 23/2023",
+pasta : "Parcerias",
+start : "Parcerias",
+middle : " ",
+end : "Públicas",
+subPasta : "Prefeitura de Vinhedo - 2023",
+ano : 2023,
+tipo : "pdf",
+caminho : "Termo_de_Colaboração_23_2023"
+},
+  { nomeDocumento : "Relatório SER 2022 e Plano de Ação 2023",
+  pasta : "Instituicao",
+  start : "Documentos",
+  middle : " da ",
+  end : "Instituição",
+  subPasta : "Ata atual diretoria",
+  ano : 2023,
+  tipo : "pdf",
+  caminho : "RELATORIO_SER_ 2022_E_PLANO_DE_AÇÃO_2023"
+  },
 ]
 
 export default documentos
