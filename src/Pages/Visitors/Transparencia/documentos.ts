@@ -214,7 +214,7 @@ caminho : "Termo_de_Colaboração_23_2023"
   start : "Documentos",
   middle : " da ",
   end : "Instituição",
-  subPasta : "Ata atual diretoria",
+  subPasta : "Relatório anual",
   ano : 2023,
   tipo : "pdf",
   caminho : "RELATORIO_SER_ 2022_E_PLANO_DE_AÇÃO_2023"
