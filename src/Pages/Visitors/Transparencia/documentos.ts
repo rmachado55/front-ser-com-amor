@@ -148,8 +148,7 @@ subPasta : "Ano 2023",
 ano : 2023,
 tipo : "pdf",
 caminho : "RELATORIO_MAIO23"
-}
-,
+},
 { nomeDocumento : "Relatório Mensal Junho",
 pasta : "Relatorios",
 start : "Relatórios ",
@@ -159,6 +158,36 @@ subPasta : "Ano 2023",
 ano : 2023,
 tipo : "pdf",
 caminho : "RELATORIO_JUNHO23"
+},
+{ nomeDocumento : "Relatório Mensal Julho",
+pasta : "Relatorios",
+start : "Relatórios ",
+middle : "anuais e ",
+end : "planos de ação",
+subPasta : "Ano 2023",
+ano : 2023,
+tipo : "pdf",
+caminho : "RELATORIO_JULHO23"
+},
+{ nomeDocumento : "Relatório Mensal Agosto",
+pasta : "Relatorios",
+start : "Relatórios ",
+middle : "anuais e ",
+end : "planos de ação",
+subPasta : "Ano 2023",
+ano : 2023,
+tipo : "pdf",
+caminho : "RELATORIO_AGOSTO23"
+},
+{ nomeDocumento : "Relatório Mensal Setembro",
+pasta : "Relatorios",
+start : "Relatórios ",
+middle : "anuais e ",
+end : "planos de ação",
+subPasta : "Ano 2023",
+ano : 2023,
+tipo : "pdf",
+caminho : "RELATORIO_SETEMBRO23"
 }
 ]
 
