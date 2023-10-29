@@ -3,7 +3,7 @@ const pastas = [
 start : "Documentos",
 middle : " da ",
 end : "Instituição",
-subPastas : ["Ata atual diretoria", "Estatuto Social"]},
+subPastas : ["Ata atual diretoria", "Estatuto Social", "Relatório anual"]},
 
 {pasta : "Contabeis",
 start : "Documentos",
