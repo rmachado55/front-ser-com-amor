@@ -23,7 +23,7 @@ export default function Footer ()
             <a href="https://api.whatsapp.com/send?phone=551932019452&text=Ol%C3%A1%2C%20entrei%20no%20site%20do%20INSTITUTO%20SER%20COM%20%20AMOR%20e%20gostaria%20de%20saber%20sobre%3A"><br></br><WhatsApp fontSize="inherit" />(19) 3201-9452</a>
             <a href="https://www.facebook.com/institutosercomamor/"><br></br><Facebook fontSize="inherit" />/institutosercomamor/</a>
             <a href="https://www.instagram.com/institutosercomamor/"><br></br><Instagram fontSize="inherit" />@institutosercomamor</a>
-            <a href="https://goo.gl/maps/WsuKsm9UGWr6FgoRA"> <br></br><PinDrop fontSize="inherit" />Rua 9 de julho, 763 - Jd Planalto - Vinhedo/SP - CEP 13280-083</a>
+            <a href="https://goo.gl/maps/WsuKsm9UGWr6FgoRA"> <br></br><PinDrop fontSize="inherit" />Rua Esturjão, 351 - Aquários - Vinhedo/SP - CEP 13280-012</a>
             <a href="mailto:institutosercomamor@gmail.com?subject=Contato%20Site"><br></br><Email fontSize="inherit" />institutosercomamor@gmail.com</a>
           </Typography>
         </Container>
